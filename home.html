@@ -16,58 +16,89 @@
 
 <body>
     <div class="container min-vh-100">
-        <div class="row mb-5 mt-5">
-            <div id="left-col" class="col-4 pl-0">
-                <ul class="mt-5">
-                    <li class="mb-4" id="waka">
-                        <button onmouseover="show()" onmouseleave="notShow()" onclick="choose()">
-                            Test your project for free
-                        </button>
-                    </li>
-                    <li class="mb-4">
-                        <button>
-                            Hire vetted QA Engineers
-                        </button>
-                    </li>
-                    <li class="mb-4">
-                        <button>
-                            Outsource your testing work
-                        </button>
-                    </li>
-                    <li class="mb-4">
-                        <button>
-                            Become a professional tester
-                        </button>
-                    </li>
-                    <li class="">
-                        <button>
-                            Apply for testing jobs
-                        </button>
-                    </li>
-                </ul>
+        <div class="row mb-4 mt-5 pl-5">
+            <div class="col-4 pr-0">
+                <button id="btn" class="btn font-weight-bold" onmouseover="show_0()" onmouseleave="notShow_0()"
+                    onclick="choose_0()">
+                    Test your project for free
+                </button>
             </div>
+
+            <div id="area-text-0" class="right-col col d-flex justify-content-start align-items-center pl-0">
+
+            </div>
+
         </div>
 
+        <div class="row mb-4 pl-5">
+            <div class="col-4">
+                <button id="btn1" class="btn font-weight-bold" onmouseover="show_1()" onmouseleave="notShow_1()"
+                    onclick="choose_1()">
+                    Hire vetted QA Engineers
+                </button>
+            </div>
+
+            <div id="area-text-1" class="col right-col d-flex justify-content-start align-items-center pl-0"></div>
+        </div>
+
+        <div class="row mb-4 pl-5">
+            <div class="col-4">
+                <button id="btn2" class="btn font-weight-bold " onmouseover="show_2()" onmouseleave="notShow_2()"
+                    onclick="choose_2()">
+                    Outsource your testing work
+                </button>
+            </div>
+
+            <div id="area-text-2" class="col right-col d-flex justify-content-start align-items-center pl-0"></div>
+        </div>
+
+        <div class="row mb-4 pl-5">
+            <div class="col-4">
+                <button id="btn3" class="btn font-weight-bold" onmouseover="show_3()" onmouseleave="notShow_3()"
+                    onclick="choose_3()">
+                    Become a professional tester
+                </button>
+            </div>
 
 
+            <div id="area-text-3" class="col right-col d-flex justify-content-start align-items-center  pl-0"></div>
+        </div>
+
+        <div class="row pl-5">
+            <div class="col-4">
+                <button id="btn4" class="btn font-weight-bold" onmouseover="show_4()" onmouseleave="notShow_4()"
+                    onclick="choose_4()">
+                    Apply for testing jobs
+                </button>
+            </div>
+
+            <div id="area-text-4" class="col right-col d-flex justify-content-start align-items-center  pl-0"></div>
+        </div>
     </div>
 
     <div class="container">
         <div id="bottom-row" class="row">
             <div class="col d-flex justify-content-center p-0">
-                <a href="">N projects tested</a>
+                <button type="button" class="btn zoom">
+                    N projects tested
+                </button>
 
             </div>
             <div class="col d-flex justify-content-center p-0">
-                <a href="">N Engineers hired</a>
+                <button type="button" class="btn" onmouseover="applyZoom(this)">
+                    N Engineers hired
+                </button>
+            </div>
+            <div class="col d-flex justify-content-center p-0">
+                <button type="button" class="btn ">
+                    N hours of testing done
+                </button>
 
             </div>
             <div class="col d-flex justify-content-center p-0">
-                <a href="">N hours of testing done</a>
-
-            </div>
-            <div class="col d-flex justify-content-center p-0">
-                <a href="">N students enrolled</a>
+                <button type="button" class="btn">
+                    N students enrolled
+                </button>
 
             </div>
         </div>

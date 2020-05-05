@@ -4,33 +4,16 @@ body {
     color: rgb(0, 0, 0);
 }
 
-#left-col ul li a, a {
-    color: rgb(0, 0, 0);
+#bottom-row {
+    margin-top: -200px;
+}
+
+#bottom-row button {
+    font-size: 23px;
     font-weight: bold;
 }
 
-#left-col ul a:hover {
-    background-color: rgb(82, 126, 247);
-    border-radius: 50px;
-    color: white;
-    text-decoration: none;
-    padding: 10px;
-    font-size: 25px;
-    transition: all 0.7s;
-}
-
-#left-col ul {
-    list-style: none;
-    text-decoration: none;
-    font-size: 20px;
-}
-
-#bottom-row {
-    margin-top: -200px;
-    font-size: 23px;
-}
-
-#bottom-row a:hover {
+#bottom-row button:hover {
     background-color: rgb(82, 126, 247);
     border-radius: 30px;
     color: white;
@@ -39,14 +22,9 @@ body {
     transition: all 0.5s;
 }
 
-button{
-    background: none;
-    border: none;
-    border-radius: 0%;
-    font-weight: bold;
-}
-button:hover{
+.col-4 button:hover {
     background-color: rgb(82, 126, 247);
+    border: solid;
     border-radius: 50px;
     color: white;
     text-decoration: none;
@@ -55,9 +33,20 @@ button:hover{
     transition: all 0.7s;
 }
 
-/*right-col*/
-#right-col input, #right-col button{
-    margin-top: 40%;
-    height: 20px;
+.right-col input {
+    width: 150px;
 }
 
+.right-col button {
+    background: none;
+    border: none;
+    border-radius: 0%;
+    font-weight: bold;
+}
+
+.right-col button:hover {
+    background-color: rgb(153, 255, 144);
+    border-radius: 30px;
+    text-decoration: none;
+    transition: all 0.7s;
+}
