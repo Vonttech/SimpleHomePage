@@ -1,0 +1,63 @@
+body {
+    background: url('Screenshot_1.png') no-repeat right;
+    overflow: hidden;
+    color: rgb(0, 0, 0);
+}
+
+#left-col ul li a, a {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+#left-col ul a:hover {
+    background-color: rgb(82, 126, 247);
+    border-radius: 50px;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 25px;
+    transition: all 0.7s;
+}
+
+#left-col ul {
+    list-style: none;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#bottom-row {
+    margin-top: -200px;
+    font-size: 23px;
+}
+
+#bottom-row a:hover {
+    background-color: rgb(82, 126, 247);
+    border-radius: 30px;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: all 0.5s;
+}
+
+button{
+    background: none;
+    border: none;
+    border-radius: 0%;
+    font-weight: bold;
+}
+button:hover{
+    background-color: rgb(82, 126, 247);
+    border-radius: 50px;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 25px;
+    transition: all 0.7s;
+}
+
+/*right-col*/
+#right-col input, #right-col button{
+    margin-top: 40%;
+    height: 20px;
+}
+
