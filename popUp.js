@@ -1,28 +1,81 @@
 /*row 0*/
+
+//Define qual botão será selecionado
+function getButtonId(id) {
+    var btnId = id;
+
+    switch (id) {
+        case '1':
+            choose_0()
+            break;
+
+        default:
+            break;
+    }
+}
+
+
+
+
 let right_col_0 = document.getElementById('area-text-0')
+let clickCount = 0
+let btn = document.getElementById('btn1')
+btn.addEventListener('mouseover', show_0)
+btn.addEventListener('mouseout', notShow_0)
+btn.addEventListener('click', choose_0)
 
 function show_0() {
     right_col_0.innerHTML = '<input type="text" id="input-0" class = "conjunto"><button id="inputBtn-0" class = "btn ml-1 p-0 pl-1 pr-1 conjunto">Go</button>'
+    btn.style.background = "rgb(82, 126, 247)"
+    btn.style.border = 'solid'
+    btn.style.borderRadius = '50px'
+    btn.style.color = 'white'
+    btn.style.fontSize = '25px'
+    btn.style.padding = '10px'
+    btn.style.transition = '0.7s'
 }
 
 function notShow_0() {
     document.getElementById('input-0').remove()
     document.getElementById('inputBtn-0').remove()
-
-    var btn = document.getElementById('btn')
-    btn.className = 'btn font-weight-bold'
+    btn.style.background = "white"
+    btn.style.borderRadius = '50px'
+    btn.style.color = '#212529'
+    btn.style.fontSize = '16px'
+    btn.style.padding = '6px 12px'
     btn.style.transition = '0.7s'
+    btn.style.border = 'none'
 }
 
-function choose_0(params) {
+//Aleta o estilo caso o botão seja clicado
+function choose_0() {
+    clickCount++
     right_col_0.innerHTML = '<input type="text" id="inputChoosed" class = "conjunto"><button id="inputBtnChoosed" class = "btn ml-1 p-0 pl-1 pr-1 conjunto">Go</button>'
-    var btn = document.getElementById('btn')
     btn.style.background = "rgb(82, 126, 247)"
     btn.style.borderRadius = '50px'
     btn.style.color = 'white'
     btn.style.fontSize = '25px'
     btn.style.padding = '10px'
-    btn.style.transformscale = ''
+
+    //Chama a função para fechar a opção
+    if (clickCount == 2) {
+        close()
+        clickCount = 0;
+    }
+}
+
+
+//Retorna para o estilo padrão de maneira suave
+function close() {
+    document.getElementById('inputChoosed').remove()
+    document.getElementById('inputBtnChoosed').remove()
+    btn.style.background = "white"
+    btn.style.borderRadius = '50px'
+    btn.style.color = '#212529'
+    btn.style.fontSize = '16px'
+    btn.style.padding = '6px 12px'
+    btn.style.transition = '0.7s'
+    btn.style.border = 'none'
 }
 
 

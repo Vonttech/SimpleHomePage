@@ -3,34 +3,8 @@ body {
     overflow: hidden;
     color: rgb(0, 0, 0);
 }
-
-#bottom-row {
-    margin-top: -200px;
-}
-
-#bottom-row button {
-    font-size: 23px;
-    font-weight: bold;
-}
-
-#bottom-row button:hover {
-    background-color: rgb(82, 126, 247);
-    border-radius: 30px;
-    color: white;
-    text-decoration: none;
-    padding: 10px;
-    transition: all 0.5s;
-}
-
-.col-4 button:hover {
-    background-color: rgb(82, 126, 247);
-    border: solid;
-    border-radius: 50px;
-    color: white;
-    text-decoration: none;
-    padding: 10px;
-    font-size: 25px;
-    transition: all 0.7s;
+button #btn1 {
+    color: rgb(0, 0, 0);
 }
 
 .right-col input {
@@ -49,4 +23,23 @@ body {
     border-radius: 30px;
     text-decoration: none;
     transition: all 0.7s;
+}
+
+
+#bottom-row {
+    margin-top: -200px;
+}
+
+#bottom-row button {
+    font-size: 23px;
+    font-weight: bold;
+}
+
+#bottom-row button:hover {
+    background-color: rgb(82, 126, 247);
+    border-radius: 30px;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: all 0.5s;
 }
